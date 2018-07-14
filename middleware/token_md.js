@@ -42,7 +42,7 @@ module.exports=async(req,res,next)=>{
             throw Error("token不合法")
         }
         //3. 判断token是否过期
-        if(token.expire<Date.now()){
+        if(tokenData.expire<Date.now()){
             throw Error("token已过期,请重新登录");
         }
         //4. 可以根据tokenData中的username取出用户信息，为了给后续的请求使用
