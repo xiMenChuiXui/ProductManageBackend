@@ -1,6 +1,6 @@
 apps:
   - script   : app.js
-    name: ProductBackend
+    name: ProductBacken
     instances: max
     exec_mode: cluster
     watch  : true
